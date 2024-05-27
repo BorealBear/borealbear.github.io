@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Peter Ferolito</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/BorealBear/borealBear.github.io/main/CrabNebulaFlavicon.ico">
+	</head>
+	<style>
+	</style>
+
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a class="active" href="photography.html">Photography</a>
+		<a href="projects.html">Projects</a>
+		<a href="about.html">About</a>
+	</div>
+	
+	
+	<body>
+		<p>
+		
+		</p>
+		
+		<div class="slideshow-container">
+		
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="crab-nebula-mosaic.jpg" style="width:100%;height:100%;object-fit:contain;">
+				<div class="text">Caption Text</div>
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="crab-nebula-mosaic.jpg" style="width:100%;height:100%;object-fit:contain;">
+				<div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="crab-nebula-mosaic.jpg" style="width:100%;height:100%;object-fit:contain;">
+				<div class="text">Caption Three</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+	
+		</div>
+		<br>
+	
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+	
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i 	= 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+	</body>
+	<p>
+	
+	</p>
+	<div class="footer">
+		<p style="font-size:8px;text-align:center;">Copyright © Peter Ferolito<br>
+All rights reserved<br>
+The photographs on this site are protected by Federal Copyright Law and may not be copied, downloaded, or reproduced in any way without the express written permission of the artist.</p>
+	</div>
+</html>
+
