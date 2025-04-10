@@ -4,18 +4,47 @@ html {
 }
 
 body {
+	margin: 0px;
 	background-color: white;
 	padding: 0px;
+	padding-top:80px;
 	font-family: Ubuntu;
-	min-height: 100vh;
-	margin: 0px;
+	/*min-height: 100vh;*/
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 }
 
-header {
-	min-height: 50px;
-	background: lightcyan;
+h1 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+h2 {
+	
+	margin-left: 40px;
+	margin-top: 5px;
+	margin-right: 40px;
+	margin-bottom: 5px;
+}
+
+p {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	text-indent: 50px;
+}
+
+.pSpecial {
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 20px;
+	margin-bottom: auto;
+	padding-top: 20px;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 20px;
+	text-indent: 50px;
 }
 
 .footer {
@@ -52,18 +81,43 @@ header {
 	margin-left: 2em;
 }
 
-.topnav {
-	background-color: #333;
+.upperbar {
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color: rgb(255, 255, 255);
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.topnav {
+	margin-top:10px;
+	
+	margin-left:5vw;
+	margin-right:5vw;
+	margin-bottom:10px;
+	background-color: rgb(230, 230, 230);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 90vw;
+	border-radius: 10px;
 }
 
 .topnav a {
 	float: left;
-	color: #f2f2f2;
+	/*color: #f2f2f2;*/
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	color: rgb(20, 20, 20);
 	font-size: 17px;
+	height:20px;
 }
 
 .topnav a:hover {
@@ -72,12 +126,20 @@ header {
 }
 
 .topnav a.active {
-	background-color: #04AA6D;
+	background-color: #006f36;
+	color: white;
+}
+
+.topnav a.active:hover {
+	background-color: #008942;
 	color: white;
 }
 
 * {box-sizing:border-box}
 
+/*************************************************/
+/****************** SLIDESHOW ********************/
+/*************************************************/
 /* Slideshow container */
 .slideshow-container {
 	background-color: #eee;
@@ -180,3 +242,55 @@ header {
 	from {opacity: .4} 
 	to {opacity: 1}
 }
+
+/*************************************************/
+/*************** END OF SLIDESHOW ****************/
+/*************************************************/
+
+
+  /*About Us*/
+
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+  
+  .column {
+	float: left;
+	width: 26%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	border-radius:12px;
+  }
+  
+  .about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #474e5d;
+	color: white;
+  }
+  
+  .container {
+	padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .titleCard {
+	color: grey;
+  }
+  
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
