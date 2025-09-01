@@ -1,0 +1,296 @@
+html {
+	font-size: 110%;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0px;
+	background-color: white;
+	padding: 0px;
+	padding-top:80px;
+	font-family: Ubuntu;
+	/*min-height: 100vh;*/
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+h2 {
+	
+	margin-left: 40px;
+	margin-top: 5px;
+	margin-right: 40px;
+	margin-bottom: 5px;
+}
+
+p {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	text-indent: 50px;
+}
+
+.pSpecial {
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 20px;
+	margin-bottom: auto;
+	padding-top: 20px;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 20px;
+	text-indent: 50px;
+}
+
+.footer {
+	min-height: 50px;
+	width: 100%;
+	background-color: #505050;
+	text-align: center;
+	color: white;
+}
+
+.button {
+	background-color: #0096FF;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border: 2px solid #0096FF;
+}
+
+.button1 {border-radius:40px;}
+
+.button:hover {
+	background-color: white;
+	color: #0096FF;
+}
+
+.tab {
+	display: inline-block;
+	margin-left: 2em;
+}
+
+.upperbar {
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.topnav {
+	margin-top:10px;
+	
+	margin-left:5vw;
+	margin-right:5vw;
+	margin-bottom:10px;
+	background-color: rgb(230, 230, 230);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 90vw;
+	border-radius: 10px;
+}
+
+.topnav a {
+	float: left;
+	/*color: #f2f2f2;*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: rgb(20, 20, 20);
+	font-size: 17px;
+	height:20px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #006f36;
+	color: white;
+}
+
+.topnav a.active:hover {
+	background-color: #008942;
+	color: white;
+}
+
+* {box-sizing:border-box}
+
+/*************************************************/
+/****************** SLIDESHOW ********************/
+/*************************************************/
+/* Slideshow container */
+.slideshow-container {
+	background-color: #eee;
+	width: 1000px;
+	height: 500px;
+	position: relative;
+ 	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	height: 500px;
+ 	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	background-color: rgba(0,0,0,0.2);
+ 	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: black;
+	background-color: #ffffffDA;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.title {
+	top: 4px;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+	background-color: #ffffffDA;
+	color:black;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/*************************************************/
+/*************** END OF SLIDESHOW ****************/
+/*************************************************/
+
+
+  /*About Us*/
+
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+  
+  .column {
+	float: left;
+	width: 26%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	border-radius:12px;
+  }
+  
+  .about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #474e5d;
+	color: white;
+  }
+  
+  .container {
+	padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .titleCard {
+	color: grey;
+  }
+  
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
