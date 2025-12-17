@@ -255,7 +255,7 @@ body {
     
     display: inline;
 
-    height: 50vh;
+    height: MIN(50vh,50vw);
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 
